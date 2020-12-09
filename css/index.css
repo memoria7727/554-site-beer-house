@@ -3,6 +3,7 @@
 :root {
     font-family: 'Open Sans', sans-serif;
     /* background-color: black; */
+    --main-color: black;
 }
 
 .logo {
@@ -16,9 +17,10 @@
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    color: 	#0000FF;
+    color: 	var(--main-color);
     width: 400px;
-    border: 1px solid transparent;
+    
+     padding: 3px;
 }
 
 .selected {
@@ -29,6 +31,8 @@
     /* border-color: blue; */
     font-weight: bold;
 }
+
+
 
 h1 {
     color: red;
