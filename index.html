@@ -20,6 +20,18 @@
             <div class="addres">вулиця Гетьмана Мазепи, 37, Львів, Львівська область</div>
             <div class="email">Bear Hous@ukr.net</div>
         </div>
+        <script language="javascript" type="text/javascript"><!--
+var d = new Date();
+
+var day=new Array("Воскресенье","Понедельник","Вторник",
+"Среда","Четверг","Пятница","Суббота");
+
+var month=new Array("января","февраля","марта","апреля","мая","июня",
+"июля","августа","сентября","октября","ноября","декабря");
+
+document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]
++ " " + d.getFullYear() + " р.");
+//--></script>
         <nav>
             <div class="logo">Bear House</div>
              <label class="burger-icon" for="burger-checkbox">☰</label>
@@ -108,16 +120,16 @@
             <h2 id="histori">Histori</h2>
             <article class="product-card">
                 <h3>Наша історія</h3>
+                <br>
+                  <div class="icon-block"></div>
+                     <section class="icon">
                 <h1>Про пивний бутік</h1>                
-                <br>					
-         <div class="icon-block">
-            <section class="icon">
                 <img src="img/bar.jpg" alt="Bar">
                 <p>Ми прагнемо просувати культуру вживання пива як щось поза футбольним матчем. Це напій з давньою історією та величезною глибиною смаку, саме тому ми будуємо в меню страви навколо їх сумісності з пивом. Beer Boutique - це місце, де можна знайти улюблений пивний аромат та дізнатись більше про напій.</p>
                 </section>
                 <h1>Процес створення</h1>
                 <section class="icon">
-                <img src="img/shots.jpg" alt="shots">
+                <img src="img/shots.jpg" width="600" height="200" alt="shots">
                 <p>Наш вибір пива є результатом довгих і скрупульозних експериментів, які дають нам тисячі поєднань смаку. Кожне пиво у нас має унікальний рецепт та надійний стандарт приготування, який пильно контролюється нашими майстрами пива. Ми хочемо, щоб ви відчули все багатство оригінального розливного пива.</p>
                 </section>
             </br>
@@ -184,4 +196,49 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
             <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+    <!DOCTYPE html>
+</html>
+
+
+
+
+
+
+<body>
+
+<h3>Обратный отчет времени</h3>
+
+<p id="demo"></p>
+
+<script>
+
+var countDownDate = new Date("July 15, 2021 04:00:00").getTime();
+
+
+var x = setInterval(function() {
+
+ 
+  var now = new Date().getTime();
+    
+  
+  var distance = countDownDate - now;
+    
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  document.getElementById("demo").innerHTML = days + "д " + hours + "ч "
+  + minutes + "м " + seconds + "с ";
+    
+  
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
 </html>

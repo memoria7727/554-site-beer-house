@@ -164,11 +164,11 @@ h4{
 }
 
 .icon-block img {
-	display: flex;
+    display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 150px;
-	margin: 25px;
+	max-width: 900px;
+    margin: 40px;
 }
 
 @media (max-width: 700px) {
@@ -188,3 +188,4 @@ h4{
 		justify-self: start;
 	}
 }
+
