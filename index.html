@@ -23,15 +23,18 @@
         <script language="javascript" type="text/javascript"><!--
 var d = new Date();
 
-var day=new Array("Воскресенье","Понедельник","Вторник",
-"Среда","Четверг","Пятница","Суббота");
+var day=new Array("Неділя","Понеділок","Вівторок",
+"Середа","Четверг","Пятниця","Субота");
 
-var month=new Array("января","февраля","марта","апреля","мая","июня",
-"июля","августа","сентября","октября","ноября","декабря");
+var month=new Array("січень","лютий","березень","квітень","травень","червень",
+"липень","серпень","вересень","жовтень","листопад","грудень");
 
 document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]
 + " " + d.getFullYear() + " р.");
 //--></script>
+
+
+
         <nav>
             <div class="logo">Bear House</div>
              <label class="burger-icon" for="burger-checkbox">☰</label>
@@ -58,33 +61,65 @@ document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]
                 <div class="buttons">
                 </div>
             </article>
+
             <div class="all">
 		<input checked type="radio" name="respond" id="desktop">
-			<article id="slider">
-					<input checked type="radio" name="slider" id="switch1">
-					<input type="radio" name="slider" id="switch2">
-					<input type="radio" name="slider" id="switch3">
-				<div id="slides">
-					<div id="overflow">
-						<div class="img">
-							<article><img src="img/beer.hous.jpg" alt="beer"></article>
-							<article><img src="img/koktels.jpg" alt="koktels"></article>
-							<article><img src="img/fish.jpg" alt="fish"></article>
-						</div>
-					</div>
-				</div>
-				<div id="controls">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-				</div>
-				<div id="active">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-				</div>
-			</article>
+			
+
+<meta charset="UTF-8">
+	<title>Слайдер на CSS пример 3</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+
+<section id="slider_bl">
+	<div class="wrapper">
+	  <input checked type=radio name="slider" id="slide1" />
+	  <input type=radio name="slider" id="slide2" />
+	  <input type=radio name="slider" id="slide3" />
+	  <input type=radio name="slider" id="slide4" />
+	  <div class="slider-wrapper">
+	    <div class=inner>
+	      <article>
+	        <div class="info top-left">
+	        <h3></h3></div>
+	        <img src="img/fish.jpg" />
+	      </article>
+	      <article>
+	        <div class="info bottom-right">
+	         <h3></h3></div>
+	        <img src="img/shots.jpg" />
+	      </article>
+	      <article>
+	        <div class="info bottom-left">
+	        <h3></h3></div>
+	        <img src="img/vine.jpg" />
+	      </article>
+	      <article>
+	        <div class="info top-right">
+	          <h3></h3></div>
+	        <img src="img/visci.jpg" />
+	      </article>
+	    </div>
+	  </div>
+	  <div class="slider-prev-next-control">
+	    <label for=slide1></label>
+	    <label for=slide2></label>
+	    <label for=slide3></label>
+	    <label for=slide4></label>
+	  </div>
+	  <div class="slider-dot-control">
+	    <label for=slide1></label>
+	    <label for=slide2></label>
+	    <label for=slide3></label>
+	    <label for=slide4></label>
+	  </div>
 	</div>
+</section>
+
+    
             <h2 id="menu">Menu</h2>
         <div class="product-list">
             <article class="product-card">
@@ -206,7 +241,7 @@ document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]
 
 <body>
 
-<h3>Обратный отчет времени</h3>
+<h3>До відкритя залишилось</h3>
 
 <p id="demo"></p>
 
